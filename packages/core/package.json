@@ -1,20 +1,28 @@
 {
   "name": "@sys-cli/core",
   "version": "1.0.1",
-  "description": "sys-cli scaffolding tools",
+  "description": "A portable basic system network configuration provider CLI tool.",
+  "keywords": [
+    "system",
+    "set-network",
+    "set-hostname",
+    "cli"
+  ],
   "author": "Pokeya <pokeya.mystic@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/pokeyaro/sys-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/pokeyaro/sys-cli/issues",
-    "email": "pokeya.mystic@gmail.com"
+    "url": "https://github.com/pokeyaro/sys-cli/issues"
   },
-  "license": "MIT",
   "main": "lib/index.js",
   "bin": {
     "sys-cli": "bin/sys-cli.js"
+  },
+  "scripts": {
+    "start": "node bin/sys-cli.js",
+    "test": "jest"
   },
   "directories": {
     "bin": "bin",
@@ -25,8 +33,16 @@
     "bin",
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
+  "os": [
+    "darwin",
+    "linux",
+    "freebsd",
+    "openbsd",
+    "sunos"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@sys-cli/netconfig": "^1.0.1",
@@ -43,9 +59,6 @@
     "@babel/preset-env": "^7.20.2",
     "execa": "^6.1.0",
     "jest": "^29.4.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "type": "module"
 }

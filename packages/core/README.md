@@ -1,32 +1,30 @@
 # sys-cli
 
-Use this scaffolding to quickly and easily configure your system, like setting up networking, hostnames, etc.
+> Portable basic system network configuration provider command-line tool.
 
-### Installation
+## Table of contents
+
+- [Installation](#install)
+- [Features](#features)
+- [Usage](#usage)
+- [Notes](#notes)
+
+## Install
 
 ```bash
-$ sudo npm i -g @sys-cli/core
+$ sudo npm install --global @sys-cli/core
 ```
 
-### Directory tree after installation
+## Features
 
-```bash
-.
-├── bin                               # Command env path
-│   └── sys-cli -> ../lib/node_modules/@sys-cli/core/bin/sys-cli.js
-└── lib                               # Scaffolding internal link library
-    └── node_modules
-        └── @sys-cli
-            └── core
-                ├── LICENSE
-                ├── README.md
-                ├── bin
-                ├── lib
-                ├── node_modules
-                └── package.json
-```
+- Set the system network (ip/netmask/gateway/ifname/cidr), and search adaptively according to the network card ports existing in the system.
+- Set the system hostname and update the hostname mapping relationship in /etc/hosts.
 
-### Usage
+## Usage
+
+In this section, we are going to review all the sub-commands and use-cases associated with the `sys-cli` command-line tool through different examples.
+
+### Help
 
 - main command
 
@@ -102,4 +100,28 @@ sys-cli success 🎉 Network setup successful ~
 # set hostname
 [root@localhost ~]# sys-cli osconfig -n my-dev-server -f
 sys-cli success 🎉 The hostname is set successfully ~
+```
+
+## Notes
+
+- Use this scaffolding to quickly and easily configure your system, like setting up networking, hostnames, etc.
+
+- Only applicable to GNU/Linux system, currently adapted distributions, such as: `CentOS7`, `Debian11`, `RHEL7.5`, `OpenSUSE12.3`, etc.
+
+- Directory tree after installation
+
+```bash
+.
+├── bin                               # Command env path
+│   └── sys-cli -> ../lib/node_modules/@sys-cli/core/bin/sys-cli.js
+└── lib                               # Scaffolding internal link library
+    └── node_modules
+        └── @sys-cli
+            └── core
+                ├── LICENSE
+                ├── README.md
+                ├── bin
+                ├── lib
+                ├── node_modules
+                └── package.json
 ```
