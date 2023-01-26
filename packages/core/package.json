@@ -1,6 +1,6 @@
 {
   "name": "@sys-cli/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A portable basic system network configuration provider CLI tool.",
   "keywords": [
     "system",
