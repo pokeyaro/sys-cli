@@ -1,0 +1,38 @@
+{
+  "name": "@sys-cli/netconfig",
+  "version": "1.0.0",
+  "description": "netconfig dependent package for sys-cli scaffolding tools",
+  "author": "Pokeya <pokeya.mystic@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokeyaro/infra-sys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pokeyaro/sys-cli/issues",
+    "email": "pokeya.mystic@gmail.com"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "script": "script",
+    "template": "template"
+  },
+  "files": [
+    "lib",
+    "script",
+    "template"
+  ],
+  "dependencies": {
+    "@sys-cli/command": "^1.0.0",
+    "@sys-cli/utils": "^1.0.0",
+    "dirname-filename-esm": "^1.1.1",
+    "is-ip": "^5.0.0",
+    "netmask": "^2.0.2",
+    "ora": "^6.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}

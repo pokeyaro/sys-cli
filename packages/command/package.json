@@ -1,0 +1,26 @@
+{
+  "name": "@sys-cli/command",
+  "version": "1.0.0",
+  "description": "command dependent package for sys-cli scaffolding tools",
+  "author": "Pokeya <pokeya.mystic@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokeyaro/sys-cli.git"
+  },
+  "bugs": { 
+    "url" : "https://github.com/pokeyaro/sys-cli/issues",
+    "email" : "pokeya.mystic@gmail.com"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}

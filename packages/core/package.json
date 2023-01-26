@@ -1,0 +1,51 @@
+{
+  "name": "@sys-cli/core",
+  "version": "1.0.0",
+  "description": "sys-cli scaffolding tools",
+  "author": "Pokeya <pokeya.mystic@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokeyaro/sys-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pokeyaro/sys-cli/issues",
+    "email": "pokeya.mystic@gmail.com"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "bin": {
+    "sys-cli": "bin/sys-cli.js"
+  },
+  "directories": {
+    "bin": "bin",
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@sys-cli/netconfig": "^1.0.0",
+    "@sys-cli/osconfig": "^1.0.0",
+    "@sys-cli/utils": "^1.0.0",
+    "commander": "^10.0.0",
+    "dirname-filename-esm": "^1.1.1",
+    "fs-extra": "^11.1.0",
+    "import-local": "^3.1.0",
+    "semver": "^7.3.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "execa": "^6.1.0",
+    "jest": "^29.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}

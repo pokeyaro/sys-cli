@@ -1,0 +1,18 @@
+{
+  "name": "sys-cli",
+  "version": "1.0.0",
+  "description": "Scaffolding of system basic settings, setting network, hostname, etc.",
+  "keywords": [
+    "network",
+    "hostname"
+  ],
+  "author": "Pokeya <pokeya.mystic@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.4.1",
+    "prettier": "^2.8.3"
+  }
+}
